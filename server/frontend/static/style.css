@@ -124,3 +124,29 @@ img{
     text-align:center;
     box-shadow: 2px 2px 3px #999;  
 }
+
+  .card_body {
+    border: 1px solid rgb(154, 152, 162);
+    border-right-width: 5px;
+    border-bottom-width: 5px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-left:5%;
+    margin-right:5%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    align-self: center;
+    padding: 10px;
+}
+
+.card_2{
+    border: rgb(103, 102, 105) 0px solid;
+    display: flex;  
+    flex-direction: column;
+    margin-left:5%;
+    margin-right:5%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
