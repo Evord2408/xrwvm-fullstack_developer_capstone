@@ -11,7 +11,7 @@ from .populate import initiate
 
 from .models import CarMake, CarModel
 
-from .restapis import get_request, analyze_review_sentiments, post_review
+from .restapis import get_request, analyze_review_sentiments
 
 
 def get_cars(request):
@@ -131,7 +131,6 @@ def get_dealer_reviews(request, dealer_id):
 
 def add_review(request):
     if (request.user.is_anonymous == False):
-        data = json.loads(request.body)
         try:
             return JsonResponse({"status": 200})
         except:
