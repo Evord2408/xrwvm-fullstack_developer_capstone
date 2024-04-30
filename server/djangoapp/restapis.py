@@ -26,8 +26,10 @@ def get_request(endpoint, **kwargs):
         # Call get method of requests library with URL and parameters
         response = requests.get(request_url)
         return response.json()
+    
     except:
         # If any error occurs
+        print(f"Unexpected {err=}, {type(err)=}")
         print("Network exception occurred")
 
 # Add code for get requests to back end
@@ -52,4 +54,5 @@ def post_review(data_dict):
         print(response.json())
         return response.json()
     except:
+        print(f"Unexpected {err=}, {type(err)=}")
         print("Network exception occurred")
